@@ -24,15 +24,15 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "first_name": "Stella",
-        "last_name": "Bergmann",
-        "title": "Student",
-        "location": "Berlin",
+        "first_name": "Estebe",
+        "last_name": "Salgado",
+        "title": "Presenter",
+        "location": "NYC",
         "user_id": "2",
         "common_friends": "48",
-        "first_friend": "Adam Wathan",
+        "first_friend": "Sameer Ughade",
         "second_friend": null,
-        "profile_picture": "https://via.placeholder.com/150x150",
+        "profile_picture": "assets/img/estebe_salgado.jpg",
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
