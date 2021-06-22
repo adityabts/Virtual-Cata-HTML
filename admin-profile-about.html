@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Virtual Cata | Admin About </title>
+    <link rel="icon" type="image/png" href="assets/vclogo.png" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/core.css">
+</head>
+
+<body class="is-white">
+
+    <!-- Pageloader -->
+    <div class="pageloader"></div>
+    <div class="infraloader is-active"></div>
+    <div class="app-overlay"></div>
+
+    <div id="main-navbar" class="navbar navbar-v1 is-inline-flex is-transparent no-shadow is-hidden-mobile">
+        <div class="container is-fluid">
+            <div class="navbar-brand">
+                <a href="/" class="navbar-item">
+                    <img class="logo light-image" src="assets/img/logo/friendkit-bold.svg" width="112" height="28" alt="">
+                    <img class="logo dark-image" src="assets/img/logo/friendkit-white.svg" width="112" height="28" alt="">
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <!-- Navbar Search -->
+
+                    <div id="explorer-trigger" class="navbar-item is-icon">
+                        <a class="icon-link is-primary">
+                            <i class="mdi mdi-apps"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-item is-icon drop-trigger">
+                        <a class="icon-link" href="javascript:void(0);">
+                            <i data-feather="bell"></i>
+                            <span class="indicator"></span>
+                        </a>
+
+                        <div class="nav-drop">
+                            <div class="inner">
+                                <div class="nav-drop-header">
+                                    <span>Notifications</span>
+                                    <a href="#">
+                                        <i data-feather="bell"></i>
+                                    </a>
+                                </div>
+                                <div class="nav-drop-body is-notifications">
+                                    <!-- Notification -->
+                                    <div class="media">
+                                        <figure class="media-left">
+                                            <p class="image">
+                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
+                                            </p>
+                                        </figure>
+                                        <div class="media-content">
+                                            <span><a href="#">David Kim</a> commented on <a href="#">your post</a>.</span>
+                                            <span class="time">30 minutes ago</span>
+                                        </div>
+                                        <div class="media-right">
+                                            <div class="added-icon">
+                                                <i data-feather="message-square"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Notification -->
+                                    <div class="media">
+                                        <figure class="media-left">
+                                            <p class="image">
+                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
+                                            </p>
+                                        </figure>
+                                        <div class="media-content">
+                                            <span><a href="#">Daniel Wellington</a> liked your <a href="#">profile.</a></span>
+                                            <span class="time">43 minutes ago</span>
+                                        </div>
+                                        <div class="media-right">
+                                            <div class="added-icon">
+                                                <i data-feather="heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Notification -->
+                                    <div class="media">
+                                        <figure class="media-left">
+                                            <p class="image">
+                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
+                                            </p>
+                                        </figure>
+                                        <div class="media-content">
+                                            <span><a href="#">Stella Bergmann</a> shared a <a href="#">New video</a> on your wall.</span>
+                                            <span class="time">Yesterday</span>
+                                        </div>
+                                        <div class="media-right">
+                                            <div class="added-icon">
+                                                <i data-feather="youtube"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Notification -->
+                                    <div class="media">
+                                        <figure class="media-left">
+                                            <p class="image">
+                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
+                                            </p>
+                                        </figure>
+                                        <div class="media-content">
+                                            <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a> with you an 2 other people.</span>
+                                            <span class="time">2 days ago</span>
+                                        </div>
+                                        <div class="media-right">
+                                            <div class="added-icon">
+                                                <i data-feather="image"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-drop-footer">
+                                    <a href="#">View All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+
+                    <div class="navbar-item">
+                        <div id="global-search" class="control">
+                            <input id="tipue_drop_input" class="input is-rounded" type="text" placeholder="Search" required>
+                            <span id="clear-search" class="reset-search">
+                                <i data-feather="x"></i>
+                            </span>
+                            <span class="search-icon">
+                                <i data-feather="search"></i>
+                            </span>
+
+                            <!-- <div id="tipue_drop_content" class="tipue-drop-content"></div> -->
+                        </div>
+                        
+                    </div>
+                    <div id="account-dropdown" class="navbar-item is-account drop-trigger has-caret">
+                        <div class="user-image">
+                            <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png" alt="">
+                            <span class="indicator"></span>
+                        </div>
+
+                        <div class="nav-drop is-account-dropdown">
+                            <div class="inner">
+                                <div class="nav-drop-header">
+                                    <span class="username">Jenna Davis</span>
+                                    <label class="theme-toggle">
+                                        <input type="checkbox">
+                                        <span class="toggler">
+                                            <span class="dark">
+                                                <i data-feather="moon"></i>
+                                            </span>
+                                        <span class="light">
+                                                <i data-feather="sun"></i>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="nav-drop-body account-items">
+                                    <a id="profile-link" href="/profile-main.html" class="account-item">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="image">
+                                                    <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>Jenna Davis</h3>
+                                                <small>Main account</small>
+                                            </div>
+                                            <div class="media-right">
+                                                <i data-feather="check"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr class="account-divider">
+                                    <a href="/options-settings.html" class="account-item">
+                                        <div class="media">
+                                            <div class="icon-wrap">
+                                                <i data-feather="settings"></i>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>Settings</h3>
+                                                <small>Access widget settings.</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="account-item">
+                                        <div class="media">
+                                            <div class="icon-wrap">
+                                                <i data-feather="life-buoy"></i>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>Help</h3>
+                                                <small>Contact our support.</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="account-item">
+                                        <div class="media">
+                                            <div class="icon-wrap">
+                                                <i data-feather="power"></i>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>Log out</h3>
+                                                <small>Log out from your account.</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar mobile-navbar is-hidden-desktop" aria-label="main navigation">
+        <!-- Brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img class="light-image" src="assets/img/logo/friendkit-bold.svg" alt="">
+                <img class="dark-image" src="assets/img/logo/friendkit-white.svg" alt="">
+            </a>
+
+            <div id="mobile-explorer-trigger" class="navbar-item is-icon">
+                <a class="icon-link is-primary">
+                    <i class="mdi mdi-apps"></i>
+                </a>
+            </div>
+
+
+            <div class="navbar-item is-icon drop-trigger">
+                <a class="icon-link" href="javascript:void(0);">
+                    <i data-feather="bell"></i>
+                    <span class="indicator"></span>
+                </a>
+
+                <div class="nav-drop">
+                    <div class="inner">
+                        <div class="nav-drop-header">
+                            <span>Notifications</span>
+                            <a href="#">
+                                <i data-feather="bell"></i>
+                            </a>
+                        </div>
+                        <div class="nav-drop-body is-notifications">
+                            <!-- Notification -->
+                            <div class="media">
+                                <figure class="media-left">
+                                    <p class="image">
+                                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <span><a href="#">David Kim</a> commented on <a href="#">your post</a>.</span>
+                                    <span class="time">30 minutes ago</span>
+                                </div>
+                                <div class="media-right">
+                                    <div class="added-icon">
+                                        <i data-feather="message-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification -->
+                            <div class="media">
+                                <figure class="media-left">
+                                    <p class="image">
+                                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <span><a href="#">Daniel Wellington</a> liked your <a href="#">profile.</a></span>
+                                    <span class="time">43 minutes ago</span>
+                                </div>
+                                <div class="media-right">
+                                    <div class="added-icon">
+                                        <i data-feather="heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification -->
+                            <div class="media">
+                                <figure class="media-left">
+                                    <p class="image">
+                                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <span><a href="#">Stella Bergmann</a> shared a <a href="#">New video</a> on your wall.</span>
+                                    <span class="time">Yesterday</span>
+                                </div>
+                                <div class="media-right">
+                                    <div class="added-icon">
+                                        <i data-feather="youtube"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification -->
+                            <div class="media">
+                                <figure class="media-left">
+                                    <p class="image">
+                                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a> with you an 2 other people.</span>
+                                    <span class="time">2 days ago</span>
+                                </div>
+                                <div class="media-right">
+                                    <div class="added-icon">
+                                        <i data-feather="image"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-drop-footer">
+                            <a href="#">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="open-mobile-search" class="navbar-item is-icon">
+                <a class="icon-link is-primary" href="javascript:void(0);">
+                    <i data-feather="search"></i>
+                </a>
+            </div>
+
+            <!-- Mobile menu toggler icon -->
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Navbar mobile menu -->
+        <div class="navbar-menu">
+            <!-- Account -->
+            <div class="navbar-item has-dropdown is-active">
+                <a href="/navbar-v1-profile-main.html" class="navbar-link">
+                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/jenna.png" alt="">
+                    <span class="is-heading">Jenna Davis</span>
+                    <label class="theme-toggle">
+                        <input type="checkbox">
+                        <span class="toggler">
+                            <span class="dark">
+                                <i data-feather="moon"></i>
+                            </span>
+                        <span class="light">
+                                <i data-feather="sun"></i>
+                            </span>
+                        </span>
+                    </label>
+                </a>
+
+               
+            </div>
+
+            <!-- More -->
+            <div class="navbar-item has-dropdown">
+                <a href="/navbar-v1-settings.html" class="navbar-link">
+                    <i data-feather="user"></i>
+                    <span class="is-heading">Account</span>
+                </a>
+
+                <!-- Mobile Dropdown -->
+                <div class="navbar-dropdown">
+                    <a href="#" class="navbar-item is-flex is-mobile-icon">
+                        <span><i data-feather="life-buoy"></i>Support</span>
+                    </a>
+                    <a href="/navbar-v1-settings.html" class="navbar-item is-flex is-mobile-icon">
+                        <span><i data-feather="settings"></i>Settings</span>
+                    </a>
+                    <a href="#" class="navbar-item is-flex is-mobile-icon">
+                        <span><i data-feather="log-out"></i>Logout</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Search-->
+        <div class="mobile-search is-hidden">
+            <div class="control">
+                <input id="tipue_drop_input_mobile" class="input" placeholder="Search...">
+                <div class="form-icon">
+                    <i data-feather="search"></i>
+                </div>
+                <div class="close-icon">
+                    <i data-feather="x"></i>
+                </div>
+                <div id="tipue_drop_content_mobile" class="tipue-drop-content"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="view-wrapper">
+
+        <!-- Container -->
+        <div class="container is-custom">
+
+            <!-- Profile page main wrapper -->
+            <div id="pages-about" class="view-wrap is-headless">
+                <div class="columns is-multiline no-margin">
+                    <!-- Left side column -->
+                    <div class="column is-paddingless">
+                        <!-- Timeline Header -->
+                        <!-- html/partials/pages/pages/page-profile-header.html -->
+                        <div class="cover-bg">
+                            <img class="cover-image" src="https://via.placeholder.com/1600x460" data-demo-src="assets/img/demo/bg/4.jpg" alt="">
+                            <div class="avatar">
+                                <img id="user-avatar" class="avatar-image" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/icons/logos/fastpizza.svg" alt="">
+                                <div class="avatar-button">
+                                    <i data-feather="plus"></i>
+                                </div>
+                                <div class="pop-button is-far-left has-tooltip modal-trigger" data-modal="change-profile-pic-modal" data-placement="right" data-title="Change profile picture">
+                                    <a class="inner">
+                                        <i data-feather="camera"></i>
+                                    </a>
+                                </div>
+                                <div id="follow-pop" class="pop-button pop-shift is-left has-tooltip" data-placement="top" data-title="Subscription">
+                                    <a class="inner">
+                                        <i class="inactive-icon" data-feather="bell"></i>
+                                        <i class="active-icon" data-feather="bell-off"></i>
+                                    </a>
+                                </div>
+                                <div id="invite-pop" class="pop-button pop-shift is-center has-tooltip" data-placement="top" data-title="Relationship">
+                                    <a href="#" class="inner">
+                                        <i class="inactive-icon" data-feather="plus"></i>
+                                        <i class="active-icon" data-feather="minus"></i>
+                                    </a>
+                                </div>
+                                <div id="chat-pop" class="pop-button is-right has-tooltip" data-placement="top" data-title="Chat">
+                                    <a class="inner">
+                                        <i data-feather="message-square"></i>
+                                    </a>
+                                </div>
+                                <div class="pop-button is-far-right has-tooltip" data-placement="right" data-title="Send message">
+                                    <a href="messages-inbox.html" class="inner">
+                                        <i data-feather="mail"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cover-overlay"></div>
+                            <div class="cover-edit modal-trigger" data-modal="change-cover-modal">
+                                <i class="mdi mdi-camera"></i>
+                                <span>Edit cover image</span>
+                            </div>
+                            <!--/html/partials/pages/pages/dropdowns/page-timeline-mobile-dropdown.html-->
+                            <div class="dropdown is-spaced is-right is-accent dropdown-trigger timeline-mobile-dropdown is-hidden-desktop">
+                                <div>
+                                    <div class="button">
+                                        <i data-feather="more-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <a href="/pages-main.html" class="dropdown-item">
+                                            <div class="media">
+                                                <i data-feather="activity"></i>
+                                                <div class="media-content">
+                                                    <h3>Timeline</h3>
+                                                    <small>Open Timeline.</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="/pages-about.html" class="dropdown-item">
+                                            <div class="media">
+                                                <i data-feather="align-right"></i>
+                                                <div class="media-content">
+                                                    <h3>About</h3>
+                                                    <small>See about info.</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="/pages-community.html" class="dropdown-item">
+                                            <div class="media">
+                                                <i data-feather="globe"></i>
+                                                <div class="media-content">
+                                                    <h3>Community</h3>
+                                                    <small>See community.</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="/pages-photos.html" class="dropdown-item">
+                                            <div class="media">
+                                                <i data-feather="image"></i>
+                                                <div class="media-content">
+                                                    <h3>Photos</h3>
+                                                    <small>See all photos.</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-menu is-hidden-mobile">
+                            <div class="menu-start">
+                                <a href="admin-profile-main.html" class="button has-min-width">Home</a>
+                                <a href="admin-profile-about.html" class="button has-min-width">About</a>
+                            </div>
+
+                        </div>
+
+                        <div class="profile-subheader">
+                            <div class="subheader-start is-hidden-mobile">
+                                <span>148K</span>
+                                <span>Followers</span>
+                            </div>
+                            <div class="subheader-middle">
+                                <h2>Whole Foods</h2>
+                                <span>Riverdale park, MD</span>
+                            </div>
+                            <div class="subheader-end is-hidden-mobile">
+                                <div class="subheader-start is-hidden-mobile">
+                                    <span>250</span>
+                                    <span>Videos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="columns has-portrait-padding">
+                    <div class="column is-4">
+
+                        <!-- Community widget -->
+                        <!-- html/partials/pages/widgets/page-community-widget.html -->
+                        <div class="box-heading">
+                            <h4>Info</h4>
+                            <div class="dropdown is-neutral is-spaced is-right dropdown-trigger">
+                                <div>
+                                    <div class="button">
+                                        <i data-feather="more-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <a href="profile-about.html" class="dropdown-item">
+                                            <div class="media">
+                                                <i data-feather="eye"></i>
+                                                <div class="media-content">
+                                                    <h3>View</h3>
+                                                    <small>View user details.</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <div class="media">
+                                                <i data-feather="search"></i>
+                                                <div class="media-content">
+                                                    <h3>Related</h3>
+                                                    <small>Search for related users.</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basic-infos-wrapper">
+                            <div class="card is-community">
+                                <h4>Community</h4>
+                                <div class="flex-block">
+                                    <i data-feather="users"></i>
+                                    <p><a>Invite your friends</a> to follow this page</p>
+                                </div>
+                                <div class="flex-block">
+                                    <i data-feather="thumbs-up"></i>
+                                    <p>150K people like this page</p>
+                                </div>
+                                <div class="flex-block">
+                                    <i data-feather="cast"></i>
+                                    <p>90K people are following this</p>
+                                </div>
+                            </div>
+
+                            <div class="card is-about">
+                                <h4>About</h4>
+                                <div class="flex-block">
+                                    <i data-feather="message-circle"></i>
+                                    <p><a>Send a Message</a></p>
+                                </div>
+                                <div class="flex-block">
+                                    <i data-feather="shopping-bag"></i>
+                                    <p><a>Commercial Company</a></p>
+                                </div>
+                                <div class="flex-block">
+                                    <i data-feather="edit-3"></i>
+                                    <p><a>Retailer</a></p>
+                                </div>
+                            </div>
+
+                            <div class="card is-friendkit">
+                                <div class="title-wrap">
+                                    <img src="assets/img/logo/friendkit-bold.svg" alt="">
+                                    <h4>Security</h4>
+                                </div>
+                                <p>Idem iste, inquam, de voluptate quid sentit? Re mihi non aeque satisfacit, et quidem locis pluribus. Consequens enim est
+                                    et post oritur, ut dixi.</p>
+                                <div class="created">
+                                    <i data-feather="flag"></i>
+                                    <span>Page created on May 6th 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Related pages widget -->
+                        <!-- html/partials/pages/widgets/pages-related-pages-widget.html -->
+                        <div class="card">
+                            <div class="card-heading is-bordered">
+                                <h4>Related Pages</h4>
+                                <div class="dropdown is-spaced is-neutral is-right dropdown-trigger">
+                                    <div>
+                                        <div class="button">
+                                            <i data-feather="more-vertical"></i>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                            <a href="#" class="dropdown-item">
+                                                <div class="media">
+                                                    <i data-feather="file-text"></i>
+                                                    <div class="media-content">
+                                                        <h3>All Recommandations</h3>
+                                                        <small>View all recommandations.</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown-item">
+                                                <div class="media">
+                                                    <i data-feather="settings"></i>
+                                                    <div class="media-content">
+                                                        <h3>Settings</h3>
+                                                        <small>Access widget settings.</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <hr class="dropdown-divider">
+                                            <a href="#" class="dropdown-item">
+                                                <div class="media">
+                                                    <i data-feather="trash-2"></i>
+                                                    <div class="media-content">
+                                                        <h3>Remove</h3>
+                                                        <small>Removes this widget from your feed.</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body no-padding">
+                                <!-- Recommended Page -->
+                                <div class="page-block transition-block">
+                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/icons/logos/gopizza.svg" data-page-popover="13" alt="">
+                                    <div class="page-meta">
+                                        <span>Whole Foods</span>
+                                        <span>Austin</span>
+                                    </div>
+                                    <div class="add-page add-transition">
+                                        <i data-feather="bookmark"></i>
+                                    </div>
+                                </div>
+                                <!-- Recommended Page -->
+                                <div class="page-block transition-block">
+                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/icons/logos/oreilly.svg" data-page-popover="14" alt="">
+                                    <div class="page-meta">
+                                        <span>Whole Foods</span>
+                                        <span>Nagpur</span>
+                                    </div>
+                                    <div class="add-page add-transition">
+                                        <i data-feather="bookmark"></i>
+                                    </div>
+                                </div>
+                                <!-- Recommended Page -->
+                                <div class="page-block transition-block">
+                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/icons/logos/epicburger.svg" data-page-popover="15" alt="">
+                                    <div class="page-meta">
+                                        <span>Whole Foods</span>
+                                        <span>Marryland</span>
+                                    </div>
+                                    <div class="add-page add-transition">
+                                        <i data-feather="bookmark"></i>
+                                    </div>
+                                </div>
+                                <!-- Recommended Page -->
+                                <div class="page-block transition-block">
+                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/icons/logos/subs.svg" data-page-popover="16" alt="">
+                                    <div class="page-meta">
+                                        <span>Whole Foods</span>
+                                        <span>UK</span>
+                                    </div>
+                                    <div class="add-page add-transition">
+                                        <i data-feather="bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-8">
+
+                        <div class="card page-about-card">
+                            <div class="card-title">
+                                <h4>About Whole Foods</h4>
+                                <a href="https://www.wholefoodsmarket.co.uk/" target="_blank" class="button is-solid grey-button raised">Go to Website</a>
+                            </div>
+                            <div class="about-body">
+                                <div class="columns">
+                                    <div class="column is-5">
+                                        <div class="about-block">
+                                            <div class="block-header">
+                                                <h4>Contact Info</h4>
+                                            </div>
+                                            <div class="block-content">
+                                                <div class="flex-inner">
+                                                    <i data-feather="phone"></i>
+                                                    <span>Call <a>+555-654-545-88</a></span>
+                                                </div>
+                                                <div class="flex-inner">
+                                                    <i data-feather="message-circle"></i>
+                                                    <span>Start a <a>Conversation</a></span>
+                                                </div>
+                                                <div class="flex-inner">
+                                                    <i data-feather="globe"></i>
+                                                    <span><a>https://www.wholefoodsmarket.co.uk/</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="about-block">
+                                            <div class="block-header">
+                                                <h4>More Info</h4>
+                                            </div>
+                                            <div class="block-content">
+                                                <div class="flex-inner has-meta">
+                                                    <i class="mdi mdi-office-building"></i>
+                                                    <div class="meta">
+                                                        <span>Company</span>
+                                                        <span>Whole Foods is a global Food market</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-inner has-meta">
+                                                    <i class="mdi mdi-earth"></i>
+                                                    <div class="meta">
+                                                        <span>Around the world</span>
+                                                        <span>WholeFoods has 28,489 stores around the world</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-6">
+                                        <div class="about-block">
+                                            <div class="block-header">
+                                                <h4>History</h4>
+                                            </div>
+                                            <div class="block-content">
+                                                <div class="history-block">
+                                                    <div class="date">1960's</div>
+                                                    <div class="timeline">
+                                                        <ul>
+                                                            <li>ABC and his brother XYZ purchase "Small E Store", a pizza restaurant in Saratoga, Michigan.</li>
+                                                            <li>The first Fast Pizza franchise restaurant opens in Saratoga, Michigan.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="history-block">
+                                                    <div class="date">1970's</div>
+                                                    <div class="timeline">
+                                                        <ul>
+                                                            <li>Amstar Corp., maker of Fast Pace, institutes a trademark infringement lawsuit against Fast Pizza.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="history-block">
+                                                    <div class="date">1980's</div>
+                                                    <div class="timeline">
+                                                        <ul>
+                                                            <li>Fast Pizza's first international restaurant opens in Winnipeg, Canada. The 1000th Fast Pizza's restaurant opens.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="explorer-menu">
+        <div class="explorer-inner">
+            <div class="explorer-container">
+                <!--Header-->
+                <div class="explorer-header">
+                    <h3>Explore</h3>
+                </div>
+                <!--List-->
+                <div class="explore-list has-slimscroll">
+                    <!--item-->
+                    <a href="/navbar-v1-feed.html" class="explore-item">
+                        <img src="assets/img/icons/explore/clover.svg" alt="">
+                        <h4>Home</h4>
+                    </a>
+                    <!--item-->
+                    <a href="/navbar-v1-events.html" class="explore-item">
+                        <img src="assets/img/icons/explore/calendar.svg" alt="">
+                        <h4>Events</h4>
+                    </a>
+                    <!--item-->
+                    <a href="/navbar-v1-groups.html" class="explore-item">
+                        <img src="assets/img/icons/explore/house.svg" alt="">
+                        <h4>Interests</h4>
+                    </a>
+                    <!--item-->
+                    <a href="/navbar-v1-settings.html" class="explore-item">
+                        <img src="assets/img/icons/explore/settings.svg" alt="">
+                        <h4>Settings</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="end-tour-modal" class="modal end-tour-modal is-xsmall has-light-bg">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+
+            <div class="card">
+                <div class="card-heading">
+                    <h3></h3>
+                    <!-- Close X button -->
+                    <div class="close-wrap">
+                        <span class="close-modal">
+                                <i data-feather="x"></i>
+                            </span>
+                    </div>
+                </div>
+                <div class="card-body has-text-centered">
+
+                    <div class="image-wrap">
+                        <img src="assets/img/logo/friendkit.svg" alt="">
+                    </div>
+
+                    <h3>That's all folks!</h3>
+                    <p>Thanks for taking the friendkit tour. There are still tons of other features for you to discover!</p>
+
+                    <div class="action">
+                        <a href="/#demos-section" class="button is-solid accent-button raised is-fullwidth">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Concatenated js plugins and jQuery -->
+    <script src="assets/js/app.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="assets/data/tipuedrop_content.js"></script>
+
+    <!-- Core js -->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Navigation options js -->
+    <script src="assets/js/navbar-v1.js"></script>
+    <script src="assets/js/navbar-v2.js"></script>
+    <script src="assets/js/navbar-mobile.js"></script>
+    <script src="assets/js/navbar-options.js"></script>
+    <script src="assets/js/sidebar-v1.js"></script>
+
+    <!-- Core instance js -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chat.js"></script>
+    <script src="assets/js/touch.js"></script>
+    <script src="assets/js/tour.js"></script>
+
+    <!-- Components js -->
+    <script src="assets/js/explorer.js"></script>
+    <script src="assets/js/widgets.js"></script>
+    <script src="assets/js/modal-uploader.js"></script>
+    <script src="assets/js/popovers-users.js"></script>
+    <script src="assets/js/popovers-pages.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+
+    <!-- Landing page js -->
+
+    <!-- Signup page js -->
+
+    <!-- Feed pages js -->
+
+    <!-- profile js -->
+    <script src="assets/js/profile.js"></script>
+
+    <!-- stories js -->
+
+    <!-- friends js -->
+
+    <!-- questions js -->
+
+    <!-- video js -->
+
+    <!-- events js -->
+
+    <!-- news js -->
+
+    <!-- shop js -->
+
+    <!-- inbox js -->
+
+    <!-- settings js -->
+
+    <!-- map page js -->
+
+    <!-- elements page js -->
+</body>
+
+</html>
