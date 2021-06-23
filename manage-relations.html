@@ -15,7 +15,7 @@
     <!-- Core CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/core.css">
-    <link rel="stylesheet" href="assets/css/retailer.css">
+    <link rel="stylesheet" href="assets/css/relations.css">
 </head>
 
 <body class="is-white">
@@ -695,7 +695,7 @@
                         <p>Melbourne, AU</p>
                         <div class="user-stats">
                             <div class="stat-block">
-                                <span>Events</span>
+                                <span>Videos</span>
                                 <span>49</span>
                             </div>
                             <div class="stat-block">
@@ -763,37 +763,117 @@
             </div>
             <div class="player-wrapper">
                 <div class="content-wrapper">
+                    
                   <div class="columns">
-                    <div class="column is-two-third">
-                      <div class="card">
-                        <span>
-                          Analytics / View by Events / Wine Tasting (Trade Winds Speciality)
-                        </span>
-                      </div>
+                    <div class="column">
+                        <div class="dropdown is-spaced is-neutral dropdown-trigger mr-5">
+                            <div>
+                                <div class="button">
+                                    <span>Distributors</span>
+                                    <i data-feather="chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <a href="#" class="dropdown-item">
+                                        <div class="media">
+                                            <i data-feather="bell"></i>
+                                            <div class="media-content">
+                                                <h3>Distributors</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <div class="media">
+                                            <i data-feather="clock"></i>
+                                            <div class="media-content">
+                                                <h3>Retailors</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item modal-trigger" data-modal="albums-modal"">
+                                        <div class=" media">
+                                            <i data-feather="clock"></i>
+                                            <div class="media-content">
+                                                <h3>End Users</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown is-spaced is-neutral dropdown-trigger">
+                            <div>
+                                <div class="button">
+                                    <span>All</span>
+                                    <i data-feather="chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <a href="#" class="dropdown-item">
+                                        <div class="media">
+                                            <i data-feather="bell"></i>
+                                            <div class="media-content">
+                                                <h3>Distributors</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <div class="media">
+                                            <i data-feather="clock"></i>
+                                            <div class="media-content">
+                                                <h3>Retailors</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item modal-trigger" data-modal="albums-modal"">
+                                        <div class=" media">
+                                            <i data-feather="clock"></i>
+                                            <div class="media-content">
+                                                <h3>End Users</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="button" style="float:right">Add new</button>
+
                     </div>
                   </div>
                   <div class="columns">
                     <div class="column is-two-third">
-                      <div class="card dummy-card">
-  
-                      </div>
-                    </div>
-                    <div class="column is-one-third">
-                      <div class="card dummy-card">
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="columns">
-                    <div class="column is-one-third">
-                      <div class="card dummy-card">
-  
-                      </div>
-                    </div>
-                    <div class="column is-two-third">
-                      <div class="card dummy-card">
-                        
-                      </div>
+                        <div class="card">
+                            <table style="width:100%" class="card-table">
+                                <tr>
+                                    <th>Presenter</th>
+                                    <th>Event Title</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td>Trade Winds Speciality</td>
+                                    <td>Wine tasting</td>
+                                    <td>24-04-2021</td>
+                                    <td>9 AM</td>
+                                    <td>Austine</td>
+                                    <td>Waiting Approval</td>
+                                </tr>
+                                <tr>
+                                    <td>Glady's Seafood</td>
+                                    <td>Sea Food Fest</td>
+                                    <td>24-04-2021</td>
+                                    <td>10 AM</td>
+                                    <td>Austine</td>
+                                    <td>Confirmed</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                   </div>
                 </div>
