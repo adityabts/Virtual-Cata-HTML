@@ -1,33 +1,39 @@
 "use strict";
 
 function initSpinner(price) {
-  $(".spinner .add").off().on("click", function () {
-    var $this = $(this);
-    var $input = $this.closest(".spinner").find("input");
-    var value = parseInt($input.val());
-    value = ++value;
-    $input.val(value).trigger("change");
-  });
-  $(".spinner .remove").off().on("click", function () {
-    var $this = $(this);
-    var $input = $this.closest(".spinner").find("input");
-    var value = parseInt($input.val());
-    value = --value;
+  $(".spinner .add")
+    .off()
+    .on("click", function () {
+      var $this = $(this);
+      var $input = $this.closest(".spinner").find("input");
+      var value = parseInt($input.val());
+      value = ++value;
+      $input.val(value).trigger("change");
+    });
+  $(".spinner .remove")
+    .off()
+    .on("click", function () {
+      var $this = $(this);
+      var $input = $this.closest(".spinner").find("input");
+      var value = parseInt($input.val());
+      value = --value;
 
-    if (value < 1) {
-      value = 1;
-    }
+      if (value < 1) {
+        value = 1;
+      }
 
-    $input.val(value).trigger("change");
-  });
-  $(".spinner input").off().on("change", function () {
-    var $this = $(this);
-    var value = parseInt($this.val());
-    console.log(value);
-    $this.closest(".spinner").find(".value").html(value);
-    var newPrice = price * value;
-    $("#quickview-button-price").html(newPrice.toFixed(2));
-  });
+      $input.val(value).trigger("change");
+    });
+  $(".spinner input")
+    .off()
+    .on("change", function () {
+      var $this = $(this);
+      var value = parseInt($this.val());
+      console.log(value);
+      $this.closest(".spinner").find(".value").html(value);
+      var newPrice = price * value;
+      $("#quickview-button-price").html(newPrice.toFixed(2));
+    });
 }
 
 $(document).ready(function () {
@@ -35,7 +41,10 @@ $(document).ready(function () {
     //Tabs
     $(".store-tabs .tab-control").on("click", function () {
       var targetSection = $(this).attr("data-tab");
-      $(this).closest(".store-tabs").find(".tab-control").removeClass("is-active");
+      $(this)
+        .closest(".store-tabs")
+        .find(".tab-control")
+        .removeClass("is-active");
       $(this).addClass("is-active");
       $(".store-tab-pane").removeClass("is-active");
       $("#" + targetSection).addClass("is-active");
@@ -45,13 +54,19 @@ $(document).ready(function () {
       var $this = $(this);
       var path = $this.closest(".product-card").attr("data-path");
       var productName = $this.closest(".product-card").attr("data-name");
-      var productPrice = parseInt($this.closest(".product-card").attr("data-price"));
+      var producHost = $this.closest(".product-card").attr("data-host");
+      var productPrice = parseInt(
+        $this.closest(".product-card").attr("data-price")
+      );
       var productImage = $this.closest(".product-card").find("img").attr("src");
       var productColors = $this.closest(".product-card").attr("data-colors");
       var productVariants = $this.closest(".product-card").attr("data-colors");
       $("#quickview-name").html(productName);
+      $("#quickview-host").html(producHost);
       $(".product-quickview .product-image img").attr("src", productImage);
-      $("#quickview-price, #quickview-button-price").html(productPrice.toFixed(2));
+      $("#quickview-price, #quickview-button-price").html(
+        productPrice.toFixed(2)
+      );
       setTimeout(function () {
         $(".quickview-loader").removeClass("is-active");
       }, 1000);
@@ -59,10 +74,15 @@ $(document).ready(function () {
 
       if (productColors === "true") {
         $("#color-properties").removeClass("is-hidden");
-        $("#color-properties input").off().on("change", function () {
-          var value = $(this).attr("id");
-          $(".product-quickview .product-image img").attr("src", path + "-" + value + ".svg");
-        });
+        $("#color-properties input")
+          .off()
+          .on("change", function () {
+            var value = $(this).attr("id");
+            $(".product-quickview .product-image img").attr(
+              "src",
+              path + "-" + value + ".svg"
+            );
+          });
       }
 
       $("#product-quickview").addClass("is-active");
@@ -101,7 +121,6 @@ $(document).ready(function () {
     });
     initComboBox();
   } //Checkout
-
 
   if ($("#checkout-button").length) {
     //Checkout next
@@ -168,7 +187,9 @@ $(document).ready(function () {
         $this.removeClass("is-loading");
         $(".checkout-section").removeClass("is-active");
         $("#checkout-section-" + prevStep).addClass("is-active");
-        $("#checkout-button").removeClass("is-disabled").attr("data-step", prevStep + 1);
+        $("#checkout-button")
+          .removeClass("is-disabled")
+          .attr("data-step", prevStep + 1);
         $this.attr("data-step", prevStep - 1);
 
         if (prevStep === 0) {
@@ -187,21 +208,29 @@ $(document).ready(function () {
 
     $(".address-box input").on("change", function () {
       $("#checkout-button").removeClass("is-disabled");
-      var address = $(this).closest(".address-box").find(".address-box-inner").html();
+      var address = $(this)
+        .closest(".address-box")
+        .find(".address-box-inner")
+        .html();
       $("#shipping-address-box p").remove();
       $("#shipping-address-box").append(address);
       $("#shipping-placeholder-box").addClass("is-hidden");
       $("#shipping-address-box").removeClass("is-hidden");
     });
     $(".shipping-box input").on("change", function () {
-      var shipppingLogo = $(this).closest(".shipping-box").find("img").attr("src");
+      var shipppingLogo = $(this)
+        .closest(".shipping-box")
+        .find("img")
+        .attr("src");
       $(".shipping-logo").attr("src", shipppingLogo).addClass("is-active");
-      $("#shipping-amount").find(".is-text").removeClass("is-text").html("15.00");
+      $("#shipping-amount")
+        .find(".is-text")
+        .removeClass("is-text")
+        .html("15.00");
       $("#total-amount span:nth-child(2)").html("216.92");
       $("#checkout-button").removeClass("is-disabled");
     });
   } //Payment
-
 
   if ($("#payment-container").length) {
     // Create a Stripe client
@@ -218,8 +247,8 @@ $(document).ready(function () {
         base: {
           // Add your base input styles here. For example:
           fontSize: "14px",
-          color: "#595d6e"
-        }
+          color: "#595d6e",
+        },
       };
     } else {
       style = {
@@ -229,15 +258,14 @@ $(document).ready(function () {
           fontSize: "14px",
           color: "#fff",
           "::placeholder": {
-            color: "#6f809e"
-          }
-        }
+            color: "#6f809e",
+          },
+        },
       };
     } // Create an instance of the card Element
 
-
     var card = elements.create("card", {
-      style: style
+      style: style,
     }); // Add an instance of the card Element into the `card-element` <div>
 
     card.mount("#card-element"); // Handle real-time validation errors from the card Element.
@@ -272,7 +300,9 @@ $(document).ready(function () {
       $("#payment-button").addClass("is-loading");
       setTimeout(function () {
         $("#payment-button").removeClass("is-loading");
-        $("#payment-container, #confirmation-container, .header-actions .button").toggleClass("is-hidden");
+        $(
+          "#payment-container, #confirmation-container, .header-actions .button"
+        ).toggleClass("is-hidden");
       }, 2000);
     });
   }
