@@ -1,1088 +1,1422 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title> Virtual Cata | Event Live</title>
+    <title>Virtual Cata | Event Live</title>
     <link rel="icon" type="image/png" href="assets/vclogo.png" />
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500"
+      rel="stylesheet"
+    />
     <!-- Core CSS -->
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/core.css">
-</head>
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/core.css" />
+  </head>
 
-<body class="is-white">
-
+  <body class="is-white">
     <!-- Pageloader -->
     <div class="pageloader"></div>
     <div class="infraloader is-active"></div>
     <div class="app-overlay"></div>
 
-    <div id="main-navbar" class="navbar navbar-v1 is-inline-flex is-transparent no-shadow is-hidden-mobile">
-        <div class="container is-fluid">
-            <div class="navbar-brand">
-                <a href="/" class="navbar-item">
-                    <img class="logo light-image" src="assets/img/logo/friendkit-bold.svg" width="112" height="28" alt="">
-                    <img class="logo dark-image" src="assets/img/logo/friendkit-white.svg" width="112" height="28" alt="">
-                </a>
-            </div>
-            <div class="navbar-menu">
-                <div class="navbar-start">
-                    <!-- Navbar Search -->
-
-                    <div id="explorer-trigger" class="navbar-item is-icon">
-                        <a class="icon-link is-primary">
-                            <i class="mdi mdi-apps"></i>
-                        </a>
-                    </div>
-
-                    <div class="navbar-item is-icon drop-trigger">
-                        <a class="icon-link" href="javascript:void(0);">
-                            <i data-feather="bell"></i>
-                            <span class="indicator"></span>
-                        </a>
-
-                        <div class="nav-drop">
-                            <div class="inner">
-                                <div class="nav-drop-header">
-                                    <span>Notifications</span>
-                                    <a href="#">
-                                        <i data-feather="bell"></i>
-                                    </a>
-                                </div>
-                                <div class="nav-drop-body is-notifications">
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">David Kim</a> commented on <a href="#">your post</a>.</span>
-                                            <span class="time">30 minutes ago</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="message-square"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">Daniel Wellington</a> liked your <a href="#">profile.</a></span>
-                                            <span class="time">43 minutes ago</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">Stella Bergmann</a> shared a <a href="#">New video</a> on your wall.</span>
-                                            <span class="time">Yesterday</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="youtube"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a> with you an 2 other people.</span>
-                                            <span class="time">2 days ago</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="image"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="nav-drop-footer">
-                                    <a href="#">View All</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="navbar-end">
-
-                    <div class="navbar-item">
-                        <div id="global-search" class="control">
-                            <input id="tipue_drop_input" class="input is-rounded" type="text" placeholder="Search" required>
-                            <span id="clear-search" class="reset-search">
-                                <i data-feather="x"></i>
-                            </span>
-                            <span class="search-icon">
-                                <i data-feather="search"></i>
-                            </span>
-
-                            <!-- <div id="tipue_drop_content" class="tipue-drop-content"></div> -->
-                        </div>
-                        
-                    </div>
-                    <div id="account-dropdown" class="navbar-item is-account drop-trigger has-caret">
-                        <div class="user-image">
-                            <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png" alt="">
-                            <span class="indicator"></span>
-                        </div>
-
-                        <div class="nav-drop is-account-dropdown">
-                            <div class="inner">
-                                <div class="nav-drop-header">
-                                    <span class="username">Jenna Davis</span>
-                                    <label class="theme-toggle">
-                                        <input type="checkbox">
-                                        <span class="toggler">
-                                            <span class="dark">
-                                                <i data-feather="moon"></i>
-                                            </span>
-                                        <span class="light">
-                                                <i data-feather="sun"></i>
-                                            </span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <div class="nav-drop-body account-items">
-                                    <a id="profile-link" href="/profile-main.html" class="account-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="image">
-                                                    <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Jenna Davis</h3>
-                                                <small>Main account</small>
-                                            </div>
-                                            <div class="media-right">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <hr class="account-divider">
-                                    <a href="/options-settings.html" class="account-item">
-                                        <div class="media">
-                                            <div class="icon-wrap">
-                                                <i data-feather="settings"></i>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Settings</h3>
-                                                <small>Access widget settings.</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="account-item">
-                                        <div class="media">
-                                            <div class="icon-wrap">
-                                                <i data-feather="life-buoy"></i>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Help</h3>
-                                                <small>Contact our support.</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="account-item">
-                                        <div class="media">
-                                            <div class="icon-wrap">
-                                                <i data-feather="power"></i>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Log out</h3>
-                                                <small>Log out from your account.</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <nav class="navbar mobile-navbar is-hidden-desktop" aria-label="main navigation">
-        <!-- Brand -->
+    <div
+      id="main-navbar"
+      class="
+        navbar navbar-v1
+        is-inline-flex is-transparent
+        no-shadow
+        is-hidden-mobile
+      "
+    >
+      <div class="container is-fluid">
         <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <img class="light-image" src="assets/img/logo/friendkit-bold.svg" alt="">
-                <img class="dark-image" src="assets/img/logo/friendkit-white.svg" alt="">
-            </a>
+          <a href="/" class="navbar-item">
+            <img
+              class="logo light-image"
+              src="assets/img/logo/friendkit-bold.svg"
+              width="112"
+              height="28"
+              alt=""
+            />
+            <img
+              class="logo dark-image"
+              src="assets/img/logo/friendkit-white.svg"
+              width="112"
+              height="28"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <!-- Navbar Search -->
 
-            <div id="mobile-explorer-trigger" class="navbar-item is-icon">
-                <a class="icon-link is-primary">
-                    <i class="mdi mdi-apps"></i>
-                </a>
+            <div id="explorer-trigger" class="navbar-item is-icon">
+              <a class="icon-link is-primary">
+                <i class="mdi mdi-apps"></i>
+              </a>
             </div>
-
 
             <div class="navbar-item is-icon drop-trigger">
-                <a class="icon-link" href="javascript:void(0);">
-                    <i data-feather="bell"></i>
-                    <span class="indicator"></span>
-                </a>
+              <a class="icon-link" href="javascript:void(0);">
+                <i data-feather="bell"></i>
+                <span class="indicator"></span>
+              </a>
 
-                <div class="nav-drop">
-                    <div class="inner">
-                        <div class="nav-drop-header">
-                            <span>Notifications</span>
-                            <a href="#">
-                                <i data-feather="bell"></i>
-                            </a>
+              <div class="nav-drop">
+                <div class="inner">
+                  <div class="nav-drop-header">
+                    <span>Notifications</span>
+                    <a href="#">
+                      <i data-feather="bell"></i>
+                    </a>
+                  </div>
+                  <div class="nav-drop-body is-notifications">
+                    <!-- Notification -->
+                    <div class="media">
+                      <figure class="media-left">
+                        <p class="image">
+                          <img
+                            src="https://via.placeholder.com/300x300"
+                            data-demo-src="assets/img/avatars/david.jpg"
+                            alt=""
+                          />
+                        </p>
+                      </figure>
+                      <div class="media-content">
+                        <span
+                          ><a href="#">David Kim</a> commented on
+                          <a href="#">your post</a>.</span
+                        >
+                        <span class="time">30 minutes ago</span>
+                      </div>
+                      <div class="media-right">
+                        <div class="added-icon">
+                          <i data-feather="message-square"></i>
                         </div>
-                        <div class="nav-drop-body is-notifications">
-                            <!-- Notification -->
-                            <div class="media">
-                                <figure class="media-left">
-                                    <p class="image">
-                                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
-                                    </p>
-                                </figure>
-                                <div class="media-content">
-                                    <span><a href="#">David Kim</a> commented on <a href="#">your post</a>.</span>
-                                    <span class="time">30 minutes ago</span>
-                                </div>
-                                <div class="media-right">
-                                    <div class="added-icon">
-                                        <i data-feather="message-square"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Notification -->
-                            <div class="media">
-                                <figure class="media-left">
-                                    <p class="image">
-                                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
-                                    </p>
-                                </figure>
-                                <div class="media-content">
-                                    <span><a href="#">Daniel Wellington</a> liked your <a href="#">profile.</a></span>
-                                    <span class="time">43 minutes ago</span>
-                                </div>
-                                <div class="media-right">
-                                    <div class="added-icon">
-                                        <i data-feather="heart"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Notification -->
-                            <div class="media">
-                                <figure class="media-left">
-                                    <p class="image">
-                                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
-                                    </p>
-                                </figure>
-                                <div class="media-content">
-                                    <span><a href="#">Stella Bergmann</a> shared a <a href="#">New video</a> on your wall.</span>
-                                    <span class="time">Yesterday</span>
-                                </div>
-                                <div class="media-right">
-                                    <div class="added-icon">
-                                        <i data-feather="youtube"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Notification -->
-                            <div class="media">
-                                <figure class="media-left">
-                                    <p class="image">
-                                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
-                                    </p>
-                                </figure>
-                                <div class="media-content">
-                                    <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a> with you an 2 other people.</span>
-                                    <span class="time">2 days ago</span>
-                                </div>
-                                <div class="media-right">
-                                    <div class="added-icon">
-                                        <i data-feather="image"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-drop-footer">
-                            <a href="#">View All</a>
-                        </div>
+                      </div>
                     </div>
+                    <!-- Notification -->
+                    <div class="media">
+                      <figure class="media-left">
+                        <p class="image">
+                          <img
+                            src="https://via.placeholder.com/300x300"
+                            data-demo-src="assets/img/avatars/daniel.jpg"
+                            alt=""
+                          />
+                        </p>
+                      </figure>
+                      <div class="media-content">
+                        <span
+                          ><a href="#">Daniel Wellington</a> liked your
+                          <a href="#">profile.</a></span
+                        >
+                        <span class="time">43 minutes ago</span>
+                      </div>
+                      <div class="media-right">
+                        <div class="added-icon">
+                          <i data-feather="heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Notification -->
+                    <div class="media">
+                      <figure class="media-left">
+                        <p class="image">
+                          <img
+                            src="https://via.placeholder.com/300x300"
+                            data-demo-src="assets/img/avatars/stella.jpg"
+                            alt=""
+                          />
+                        </p>
+                      </figure>
+                      <div class="media-content">
+                        <span
+                          ><a href="#">Stella Bergmann</a> shared a
+                          <a href="#">New video</a> on your wall.</span
+                        >
+                        <span class="time">Yesterday</span>
+                      </div>
+                      <div class="media-right">
+                        <div class="added-icon">
+                          <i data-feather="youtube"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Notification -->
+                    <div class="media">
+                      <figure class="media-left">
+                        <p class="image">
+                          <img
+                            src="https://via.placeholder.com/300x300"
+                            data-demo-src="assets/img/avatars/elise.jpg"
+                            alt=""
+                          />
+                        </p>
+                      </figure>
+                      <div class="media-content">
+                        <span
+                          ><a href="#">Elise Walker</a> shared an
+                          <a href="#">Image</a> with you an 2 other
+                          people.</span
+                        >
+                        <span class="time">2 days ago</span>
+                      </div>
+                      <div class="media-right">
+                        <div class="added-icon">
+                          <i data-feather="image"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-drop-footer">
+                    <a href="#">View All</a>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
 
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div id="global-search" class="control">
+                <input
+                  id="tipue_drop_input"
+                  class="input is-rounded"
+                  type="text"
+                  placeholder="Search"
+                  required
+                />
+                <span id="clear-search" class="reset-search">
+                  <i data-feather="x"></i>
+                </span>
+                <span class="search-icon">
+                  <i data-feather="search"></i>
+                </span>
 
-            <div id="open-mobile-search" class="navbar-item is-icon">
-                <a class="icon-link is-primary" href="javascript:void(0);">
-                    <i data-feather="search"></i>
-                </a>
+                <!-- <div id="tipue_drop_content" class="tipue-drop-content"></div> -->
+              </div>
             </div>
+            <div
+              id="account-dropdown"
+              class="navbar-item is-account drop-trigger has-caret"
+            >
+              <div class="user-image">
+                <img
+                  src="https://via.placeholder.com/400x400"
+                  data-demo-src="assets/img/avatars/jenna.png"
+                  alt=""
+                />
+                <span class="indicator"></span>
+              </div>
 
-            <!-- Mobile menu toggler icon -->
-            <div class="navbar-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <!-- Navbar mobile menu -->
-        <div class="navbar-menu">
-            <!-- Account -->
-            <div class="navbar-item has-dropdown is-active">
-                <a href="/navbar-v1-profile-main.html" class="navbar-link">
-                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/jenna.png" alt="">
-                    <span class="is-heading">Jenna Davis</span>
+              <div class="nav-drop is-account-dropdown">
+                <div class="inner">
+                  <div class="nav-drop-header">
+                    <span class="username">Jenna Davis</span>
                     <label class="theme-toggle">
-                        <input type="checkbox">
-                        <span class="toggler">
-                            <span class="dark">
-                                <i data-feather="moon"></i>
-                            </span>
-                        <span class="light">
-                                <i data-feather="sun"></i>
-                            </span>
+                      <input type="checkbox" />
+                      <span class="toggler">
+                        <span class="dark">
+                          <i data-feather="moon"></i>
                         </span>
+                        <span class="light">
+                          <i data-feather="sun"></i>
+                        </span>
+                      </span>
                     </label>
-                </a>
-
-               
-            </div>
-
-            <!-- More -->
-            <div class="navbar-item has-dropdown">
-                <a href="/navbar-v1-settings.html" class="navbar-link">
-                    <i data-feather="user"></i>
-                    <span class="is-heading">Account</span>
-                </a>
-
-                <!-- Mobile Dropdown -->
-                <div class="navbar-dropdown">
-                    <a href="#" class="navbar-item is-flex is-mobile-icon">
-                        <span><i data-feather="life-buoy"></i>Support</span>
+                  </div>
+                  <div class="nav-drop-body account-items">
+                    <a
+                      id="profile-link"
+                      href="/profile-main.html"
+                      class="account-item"
+                    >
+                      <div class="media">
+                        <div class="media-left">
+                          <div class="image">
+                            <img
+                              src="https://via.placeholder.com/400x400"
+                              data-demo-src="assets/img/avatars/jenna.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="media-content">
+                          <h3>Jenna Davis</h3>
+                          <small>Main account</small>
+                        </div>
+                        <div class="media-right">
+                          <i data-feather="check"></i>
+                        </div>
+                      </div>
                     </a>
-                    <a href="/navbar-v1-settings.html" class="navbar-item is-flex is-mobile-icon">
-                        <span><i data-feather="settings"></i>Settings</span>
+                    <hr class="account-divider" />
+                    <a href="/options-settings.html" class="account-item">
+                      <div class="media">
+                        <div class="icon-wrap">
+                          <i data-feather="settings"></i>
+                        </div>
+                        <div class="media-content">
+                          <h3>Settings</h3>
+                          <small>Access widget settings.</small>
+                        </div>
+                      </div>
                     </a>
-                    <a href="#" class="navbar-item is-flex is-mobile-icon">
-                        <span><i data-feather="log-out"></i>Logout</span>
+                    <a class="account-item">
+                      <div class="media">
+                        <div class="icon-wrap">
+                          <i data-feather="life-buoy"></i>
+                        </div>
+                        <div class="media-content">
+                          <h3>Help</h3>
+                          <small>Contact our support.</small>
+                        </div>
+                      </div>
                     </a>
+                    <a class="account-item">
+                      <div class="media">
+                        <div class="icon-wrap">
+                          <i data-feather="power"></i>
+                        </div>
+                        <div class="media-content">
+                          <h3>Log out</h3>
+                          <small>Log out from your account.</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!--Search-->
-        <div class="mobile-search is-hidden">
-            <div class="control">
-                <input id="tipue_drop_input_mobile" class="input" placeholder="Search...">
-                <div class="form-icon">
-                    <i data-feather="search"></i>
-                </div>
-                <div class="close-icon">
-                    <i data-feather="x"></i>
-                </div>
-                <div id="tipue_drop_content_mobile" class="tipue-drop-content"></div>
-            </div>
+      </div>
+    </div>
+    <nav
+      class="navbar mobile-navbar is-hidden-desktop"
+      aria-label="main navigation"
+    >
+      <!-- Brand -->
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img
+            class="light-image"
+            src="assets/img/logo/friendkit-bold.svg"
+            alt=""
+          />
+          <img
+            class="dark-image"
+            src="assets/img/logo/friendkit-white.svg"
+            alt=""
+          />
+        </a>
+
+        <div id="mobile-explorer-trigger" class="navbar-item is-icon">
+          <a class="icon-link is-primary">
+            <i class="mdi mdi-apps"></i>
+          </a>
         </div>
+
+        <div class="navbar-item is-icon drop-trigger">
+          <a class="icon-link" href="javascript:void(0);">
+            <i data-feather="bell"></i>
+            <span class="indicator"></span>
+          </a>
+
+          <div class="nav-drop">
+            <div class="inner">
+              <div class="nav-drop-header">
+                <span>Notifications</span>
+                <a href="#">
+                  <i data-feather="bell"></i>
+                </a>
+              </div>
+              <div class="nav-drop-body is-notifications">
+                <!-- Notification -->
+                <div class="media">
+                  <figure class="media-left">
+                    <p class="image">
+                      <img
+                        src="https://via.placeholder.com/300x300"
+                        data-demo-src="assets/img/avatars/david.jpg"
+                        alt=""
+                      />
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <span
+                      ><a href="#">David Kim</a> commented on
+                      <a href="#">your post</a>.</span
+                    >
+                    <span class="time">30 minutes ago</span>
+                  </div>
+                  <div class="media-right">
+                    <div class="added-icon">
+                      <i data-feather="message-square"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- Notification -->
+                <div class="media">
+                  <figure class="media-left">
+                    <p class="image">
+                      <img
+                        src="https://via.placeholder.com/300x300"
+                        data-demo-src="assets/img/avatars/daniel.jpg"
+                        alt=""
+                      />
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <span
+                      ><a href="#">Daniel Wellington</a> liked your
+                      <a href="#">profile.</a></span
+                    >
+                    <span class="time">43 minutes ago</span>
+                  </div>
+                  <div class="media-right">
+                    <div class="added-icon">
+                      <i data-feather="heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- Notification -->
+                <div class="media">
+                  <figure class="media-left">
+                    <p class="image">
+                      <img
+                        src="https://via.placeholder.com/300x300"
+                        data-demo-src="assets/img/avatars/stella.jpg"
+                        alt=""
+                      />
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <span
+                      ><a href="#">Stella Bergmann</a> shared a
+                      <a href="#">New video</a> on your wall.</span
+                    >
+                    <span class="time">Yesterday</span>
+                  </div>
+                  <div class="media-right">
+                    <div class="added-icon">
+                      <i data-feather="youtube"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- Notification -->
+                <div class="media">
+                  <figure class="media-left">
+                    <p class="image">
+                      <img
+                        src="https://via.placeholder.com/300x300"
+                        data-demo-src="assets/img/avatars/elise.jpg"
+                        alt=""
+                      />
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <span
+                      ><a href="#">Elise Walker</a> shared an
+                      <a href="#">Image</a> with you an 2 other people.</span
+                    >
+                    <span class="time">2 days ago</span>
+                  </div>
+                  <div class="media-right">
+                    <div class="added-icon">
+                      <i data-feather="image"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-drop-footer">
+                <a href="#">View All</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="open-mobile-search" class="navbar-item is-icon">
+          <a class="icon-link is-primary" href="javascript:void(0);">
+            <i data-feather="search"></i>
+          </a>
+        </div>
+
+        <!-- Mobile menu toggler icon -->
+        <div class="navbar-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- Navbar mobile menu -->
+      <div class="navbar-menu">
+        <!-- Account -->
+        <div class="navbar-item has-dropdown is-active">
+          <a href="/navbar-v1-profile-main.html" class="navbar-link">
+            <img
+              src="https://via.placeholder.com/150x150"
+              data-demo-src="assets/img/avatars/jenna.png"
+              alt=""
+            />
+            <span class="is-heading">Jenna Davis</span>
+            <label class="theme-toggle">
+              <input type="checkbox" />
+              <span class="toggler">
+                <span class="dark">
+                  <i data-feather="moon"></i>
+                </span>
+                <span class="light">
+                  <i data-feather="sun"></i>
+                </span>
+              </span>
+            </label>
+          </a>
+        </div>
+
+        <!-- More -->
+        <div class="navbar-item has-dropdown">
+          <a href="/navbar-v1-settings.html" class="navbar-link">
+            <i data-feather="user"></i>
+            <span class="is-heading">Account</span>
+          </a>
+
+          <!-- Mobile Dropdown -->
+          <div class="navbar-dropdown">
+            <a href="#" class="navbar-item is-flex is-mobile-icon">
+              <span><i data-feather="life-buoy"></i>Support</span>
+            </a>
+            <a
+              href="/navbar-v1-settings.html"
+              class="navbar-item is-flex is-mobile-icon"
+            >
+              <span><i data-feather="settings"></i>Settings</span>
+            </a>
+            <a href="#" class="navbar-item is-flex is-mobile-icon">
+              <span><i data-feather="log-out"></i>Logout</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--Search-->
+      <div class="mobile-search is-hidden">
+        <div class="control">
+          <input
+            id="tipue_drop_input_mobile"
+            class="input"
+            placeholder="Search..."
+          />
+          <div class="form-icon">
+            <i data-feather="search"></i>
+          </div>
+          <div class="close-icon">
+            <i data-feather="x"></i>
+          </div>
+          <div id="tipue_drop_content_mobile" class="tipue-drop-content"></div>
+        </div>
+      </div>
     </nav>
     <div class="view-wrapper is-full">
-
-        <div class="videos-wrapper has-player">
-
-            <!-- /html/partials/pages/videos/videos-sidebar.html -->
-            <div class="videos-sidebar is-active">
-                <div class="videos-sidebar-inner">
-                    <div class="user-block">
-                        <a class="close-videos-sidebar">
-                            <i data-feather="x"></i>
-                        </a>
-                        <div class="avatar-wrap">
-                            <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/jenna.png" data-user-popover="0" alt="">
-                            <div class="badge">
-                                <i data-feather="check"></i>
-                            </div>
-                        </div>
-                        <h4>Whole Foods</h4>
-                        <p>Melbourne, AU</p>
-                        <div class="user-stats">
-                            <div class="stat-block">
-                                <span>Videos</span>
-                                <span>49</span>
-                            </div>
-                            <div class="stat-block">
-                                <span>Followers</span>
-                                <span>2.3K</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="user-menu">
-                        <div class="user-menu-inner has-slimscroll">
-                            <div class="menu-block">
-                                <ul>
-                                    <li class="is-active">
-                                        <a>
-                                            <i data-feather="smile"></i>
-                                            <span>Upcoming</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <i data-feather="youtube"></i>
-                                            <span>Live Events</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <i data-feather="cast"></i>
-                                            <span>Past Events</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="separator"></div>
-
-                        </div>
-                    </div>
+      <div class="videos-wrapper has-player">
+        <!-- /html/partials/pages/videos/videos-sidebar.html -->
+        <div class="videos-sidebar is-active">
+          <div class="videos-sidebar-inner">
+            <div class="user-block">
+              <a class="close-videos-sidebar">
+                <i data-feather="x"></i>
+              </a>
+              <div class="avatar-wrap">
+                <img
+                  src="https://via.placeholder.com/150x150"
+                  data-demo-src="assets/img/avatars/jenna.png"
+                  data-user-popover="0"
+                  alt=""
+                />
+                <div class="badge">
+                  <i data-feather="check"></i>
                 </div>
+              </div>
+              <h4>Whole Foods</h4>
+              <p>Melbourne, AU</p>
+              <div class="user-stats">
+                <div class="stat-block">
+                  <span>Videos</span>
+                  <span>49</span>
+                </div>
+                <div class="stat-block">
+                  <span>Followers</span>
+                  <span>2.3K</span>
+                </div>
+              </div>
             </div>
-            <div class=" player-wrapper">
-                <div class="video-side">
-                    <div class="image">
-                        <div class="plyr__video-embed" id="player">
-                            <iframe src="https://www.youtube.com/embed/-qbVcvO7eks?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allow="autoplay"></iframe>
-                        </div>
-                    </div>
-                    <div class="meta-box video-meta">
-                        <div class="video-title">Trade Winds Speciality</div>
-                        <div class="video-subtitle">
-                            <div class="views-count">457 223 views</div>
-                            <div class="quick-actions">
-                                <a class="quick-action">
-                                    <i data-feather="thumbs-up"></i>
-                                </a>
-                                <a class="quick-action">
-                                    <i data-feather="thumbs-down"></i>
-                                </a>
-                                <a class="quick-action">
-                                    <i data-feather="share-2"></i>
-                                </a>
-                                <a class="quick-action">
-                                    <i data-feather="save"></i>
-                                </a>
-                                <a class="quick-action">
-                                    <i data-feather="cast"></i>
-                                </a>
-                                <a class="quick-action is-mobile related-trigger">
-                                    <i data-feather="more-vertical"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="video-owner">
-                            <img src="https://via.placeholder.com/150x150" data-demo-src="https://yt3.ggpht.com/a/AATXAJwGpWL7g1YRC4p5kDEJRyaCDSGCk5u48UqmUqN_sw=s88-c-k-c0xffffffff-no-rj-mo" alt="">
-                            <div class="meta">
-                                <span>Estebe Salgado</span>
-                                <span>Uploaded 10 days ago</span>
-                            </div>
-                            <a class="button">Follow 1.52M</a>
-                        </div>
-
-                    </div>
-                    <div class="meta-box video-description">
-                        <h4>Description</h4>
-                        <p>Quis non odit sordidos, vanos, leves, futtiles? Vide, quantum, inquam, fallare, Torquate. Duo Reges: constructio
-                            interrete. Vestri haec verecundius, illi fortasse constantius. Si longus, levis dictata sunt. Magna laus.</p>
-
-                        <div class="additional-description content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Murenam te accusante defenderem. Apud ceteros autem
-                                philosophos, qui quaesivit aliquid, tacet;
-                            </p>
-                            <p>
-                                <a class="standard-link" href="http://loripsum.net/" target="_blank">Qui est in parvis malis.</a> Non potes, nisi retexueris illa.
-                                <a class="standard-link" href="http://loripsum.net/" target="_blank">Sed fortuna fortis;</a> Duo Reges: constructio interrete.
-                                <a class="standard-link" href="http://loripsum.net/" target="_blank">Primum divisit ineleganter;</a>
-                            </p>
-                            <ul>
-                                <li>Quid, si non sensus modo ei sit datus, verum etiam animus hominis?</li>
-                                <li>Re mihi non aeque satisfacit, et quidem locis pluribus.</li>
-                                <li>Ergo opifex plus sibi proponet ad formarum quam civis excellens ad factorum pulchritudinem?</li>
-                                <li>Animadverti, ínquam, te isto modo paulo ante ponere, et scio ab Antiocho nostro dici sic solere;</li>
-                            </ul>
-                            <p>Sed residamus, inquit, si placet. Dici enim nihil potest verius. Ita relinquet duas, de quibus etiam atque etiam
-                                consideret. Haec para/doca illi, nos admirabilia dicamus. Nescio quo modo praetervolavit oratio. Ut pulsi recurrant?
-                                A mene tu? Summus dolor plures dies manere non potest?</p>
-                        </div>
-
-                        <hr>
-                        <a id="description-show-more" class="has-text-centered video-description-more">Show More</a>
-                    </div>
-                    <div class="comments-wrap">
-                        <div class="media comment-box">
-                            <div class="media-left">
-                                <div class="avatar-wrap">
-                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/jenna.png" data-user-popover="0" alt="">
-                                    <div class="badge">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="media-content">
-                                <div class="control">
-                                    <textarea class="textarea" placeholder="Add a comment..." rows="4"></textarea>
-                                    <a class="button">Post Comment</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="comments-count">
-                            <h3>Comments (9)</h3>
-                        </div>
-
-                        <div class="media is-comment">
-                            <div class="media-left">
-                                <div class="avatar-wrap is-smaller">
-                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
-                                    <div class="badge">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="media-content">
-                                <div class="comment-meta">
-                                    <h4><a>Dan Walker</a> <small> · 3 hours ago</small></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
-                                        ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit
-                                        rutrum. Nunc in tempus turpis.</p>
-                                </div>
-                                <div class="comment-stats-wrap">
-                                    <div class="comment-stats">
-                                        <div class="stat is-likes">
-                                            <i data-feather="thumbs-up"></i>
-                                            <span>23</span>
-                                        </div>
-                                        <div class="stat is-dislikes">
-                                            <i data-feather="thumbs-down"></i>
-                                            <span>3</span>
-                                        </div>
-                                    </div>
-                                    <div class="comment-actions">
-                                        <a class="comment-action is-like">
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a class="comment-action is-dislike">
-                                            <i data-feather="thumbs-down"></i>
-                                        </a>
-                                        <a class="comment-action is-reply">
-                                            <i data-feather="message-circle"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="nested-replies">
-                                    <a class="header">
-                                        <span>5 Replies</span>
-                                        <i data-feather="chevron-down"></i>
-                                    </a>
-                                    <div class="nested-comments">
-                                        <!--Nested comment -->
-                                        <div class="media is-comment is-nested">
-                                            <figure class="media-left">
-                                                <div class="avatar-wrap is-smaller">
-                                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/gaelle.jpeg" data-user-popover="11" alt="">
-                                                </div>
-                                            </figure>
-                                            <div class="media-content">
-                                                <div class="comment-meta">
-                                                    <h4><a>Gaelle Morris</a> <small> · 30 minutes ago</small></h4>
-                                                    <p><span class="mention">@Dan Walker</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.</p>
-                                                </div>
-                                                <div class="comment-stats-wrap">
-                                                    <div class="comment-stats">
-                                                        <div class="stat is-likes">
-                                                            <i data-feather="thumbs-up"></i>
-                                                            <span>2</span>
-                                                        </div>
-                                                        <div class="stat is-dislikes">
-                                                            <i data-feather="thumbs-down"></i>
-                                                            <span>0</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="comment-actions">
-                                                        <a class="comment-action is-like">
-                                                            <i data-feather="thumbs-up"></i>
-                                                        </a>
-                                                        <a class="comment-action is-dislike">
-                                                            <i data-feather="thumbs-down"></i>
-                                                        </a>
-                                                        <a class="comment-action is-reply">
-                                                            <i data-feather="message-circle"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Nested comment -->
-                                        <div class="media is-comment is-nested">
-                                            <figure class="media-left">
-                                                <div class="avatar-wrap is-smaller">
-                                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/rolf.jpg" data-user-popover="13" alt="">
-                                                    <div class="badge">
-                                                        <i data-feather="check"></i>
-                                                    </div>
-                                                </div>
-                                            </figure>
-                                            <div class="media-content">
-                                                <div class="comment-meta">
-                                                    <h4><a>Rolf Krupp</a> <small> · 50 minutes ago</small></h4>
-                                                    <p><span class="mention">@Gaelle Morris</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non.</p>
-                                                </div>
-                                                <div class="comment-stats-wrap">
-                                                    <div class="comment-stats">
-                                                        <div class="stat is-likes">
-                                                            <i data-feather="thumbs-up"></i>
-                                                            <span>1</span>
-                                                        </div>
-                                                        <div class="stat is-dislikes">
-                                                            <i data-feather="thumbs-down"></i>
-                                                            <span>0</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="comment-actions">
-                                                        <a class="comment-action is-like">
-                                                            <i data-feather="thumbs-up"></i>
-                                                        </a>
-                                                        <a class="comment-action is-dislike">
-                                                            <i data-feather="thumbs-down"></i>
-                                                        </a>
-                                                        <a class="comment-action is-reply">
-                                                            <i data-feather="message-circle"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Nested comment -->
-                                        <div class="media is-comment is-nested">
-                                            <figure class="media-left">
-                                                <div class="avatar-wrap is-smaller">
-                                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/bobby.jpg" data-user-popover="8" alt="">
-                                                </div>
-                                            </figure>
-                                            <div class="media-content">
-                                                <div class="comment-meta">
-                                                    <h4><a>Bobby Brown</a> <small> · 1 hour ago</small></h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                </div>
-                                                <div class="comment-stats-wrap">
-                                                    <div class="comment-stats">
-                                                        <div class="stat is-likes">
-                                                            <i data-feather="thumbs-up"></i>
-                                                            <span>5</span>
-                                                        </div>
-                                                        <div class="stat is-dislikes">
-                                                            <i data-feather="thumbs-down"></i>
-                                                            <span>1</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="comment-actions">
-                                                        <a class="comment-action is-like">
-                                                            <i data-feather="thumbs-up"></i>
-                                                        </a>
-                                                        <a class="comment-action is-dislike">
-                                                            <i data-feather="thumbs-down"></i>
-                                                        </a>
-                                                        <a class="comment-action is-reply">
-                                                            <i data-feather="message-circle"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Nested comment -->
-                                        <div class="media is-comment is-nested">
-                                            <figure class="media-left">
-                                                <div class="avatar-wrap is-smaller">
-                                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/stella.jpg" data-user-popover="2" alt="">
-                                                </div>
-                                            </figure>
-                                            <div class="media-content">
-                                                <div class="comment-meta">
-                                                    <h4><a>Stella Bergmann</a> <small> · 2 hours ago</small></h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
-                                                        ultricies elit blandit non.</p>
-                                                </div>
-                                                <div class="comment-stats-wrap">
-                                                    <div class="comment-stats">
-                                                        <div class="stat is-likes">
-                                                            <i data-feather="thumbs-up"></i>
-                                                            <span>0</span>
-                                                        </div>
-                                                        <div class="stat is-dislikes">
-                                                            <i data-feather="thumbs-down"></i>
-                                                            <span>0</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="comment-actions">
-                                                        <a class="comment-action is-like">
-                                                            <i data-feather="thumbs-up"></i>
-                                                        </a>
-                                                        <a class="comment-action is-dislike">
-                                                            <i data-feather="thumbs-down"></i>
-                                                        </a>
-                                                        <a class="comment-action is-reply">
-                                                            <i data-feather="message-circle"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Nested comment -->
-                                        <div class="media is-comment is-nested">
-                                            <figure class="media-left">
-                                                <div class="avatar-wrap is-smaller">
-                                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/edward.jpeg" data-user-popover="5" alt="">
-                                                </div>
-                                            </figure>
-                                            <div class="media-content">
-                                                <div class="comment-meta">
-                                                    <h4><a>Edward Mayers</a> <small> · 3 hours ago</small></h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
-                                                        ultricies elit blandit non.</p>
-                                                </div>
-                                                <div class="comment-stats-wrap">
-                                                    <div class="comment-stats">
-                                                        <div class="stat is-likes">
-                                                            <i data-feather="thumbs-up"></i>
-                                                            <span>6</span>
-                                                        </div>
-                                                        <div class="stat is-dislikes">
-                                                            <i data-feather="thumbs-down"></i>
-                                                            <span>0</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="comment-actions">
-                                                        <a class="comment-action is-like">
-                                                            <i data-feather="thumbs-up"></i>
-                                                        </a>
-                                                        <a class="comment-action is-dislike">
-                                                            <i data-feather="thumbs-down"></i>
-                                                        </a>
-                                                        <a class="comment-action is-reply">
-                                                            <i data-feather="message-circle"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Comment -->
-                        <div class="media is-comment">
-                            <figure class="media-left">
-                                <div class="avatar-wrap is-smaller">
-                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/milly.jpg" data-user-popover="7" alt="">
-                                </div>
-                            </figure>
-                            <div class="media-content">
-                                <div class="comment-meta">
-                                    <h4><a>Milly Augutine</a> <small> · 4 hours ago</small></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                                <div class="comment-stats-wrap">
-                                    <div class="comment-stats">
-                                        <div class="stat is-likes">
-                                            <i data-feather="thumbs-up"></i>
-                                            <span>8</span>
-                                        </div>
-                                        <div class="stat is-dislikes">
-                                            <i data-feather="thumbs-down"></i>
-                                            <span>0</span>
-                                        </div>
-                                    </div>
-                                    <div class="comment-actions">
-                                        <a class="comment-action is-like">
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a class="comment-action is-dislike">
-                                            <i data-feather="thumbs-down"></i>
-                                        </a>
-                                        <a class="comment-action is-reply">
-                                            <i data-feather="message-circle"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="media is-comment">
-                            <figure class="media-left">
-                                <div class="avatar-wrap is-smaller">
-                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/elise.jpg" data-user-popover="6" alt="">
-                                </div>
-                            </figure>
-                            <div class="media-content">
-                                <div class="comment-meta">
-                                    <h4><a>Elise Walker</a> <small> · 5 hours ago</small></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
-                                        ultricies elit blandit non.</p>
-                                </div>
-                                <div class="comment-stats-wrap">
-                                    <div class="comment-stats">
-                                        <div class="stat is-likes">
-                                            <i data-feather="thumbs-up"></i>
-                                            <span>3</span>
-                                        </div>
-                                        <div class="stat is-dislikes">
-                                            <i data-feather="thumbs-down"></i>
-                                            <span>0</span>
-                                        </div>
-                                    </div>
-                                    <div class="comment-actions">
-                                        <a class="comment-action is-like">
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a class="comment-action is-dislike">
-                                            <i data-feather="thumbs-down"></i>
-                                        </a>
-                                        <a class="comment-action is-reply">
-                                            <i data-feather="message-circle"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="media is-comment">
-                            <figure class="media-left">
-                                <div class="avatar-wrap is-smaller">
-                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/placeholder-m.jpg" alt="">
-                                </div>
-                            </figure>
-                            <div class="media-content">
-                                <div class="comment-meta">
-                                    <h4><a>John Doe</a> <small> · 5 hours ago</small></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
-                                        ultricies elit blandit non.</p>
-                                </div>
-                                <div class="comment-stats-wrap">
-                                    <div class="comment-stats">
-                                        <div class="stat is-likes">
-                                            <i data-feather="thumbs-up"></i>
-                                            <span>12</span>
-                                        </div>
-                                        <div class="stat is-dislikes">
-                                            <i data-feather="thumbs-down"></i>
-                                            <span>4</span>
-                                        </div>
-                                    </div>
-                                    <div class="comment-actions">
-                                        <a class="comment-action is-like">
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a class="comment-action is-dislike">
-                                            <i data-feather="thumbs-down"></i>
-                                        </a>
-                                        <a class="comment-action is-reply">
-                                            <i data-feather="message-circle"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="user-menu">
+              <div class="user-menu-inner has-slimscroll">
+                <div class="menu-block">
+                  <ul>
+                    <li class="is-active">
+                      <a>
+                        <i data-feather="smile"></i>
+                        <span>Upcoming</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <i data-feather="youtube"></i>
+                        <span>Live Events</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <i data-feather="cast"></i>
+                        <span>Past Events</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="related-side">
-                    <div class="meta-box related-list">
-                        
-    <div class="chat-wrapper">
+
+                <div class="separator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="player-wrapper">
+          <div class="video-side">
+            <div class="image">
+              <div class="plyr__video-embed" id="player">
+                <iframe
+                  src="https://www.youtube.com/embed/-qbVcvO7eks?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                  allowfullscreen
+                  allow="autoplay"
+                ></iframe>
+              </div>
+            </div>
+            <div class="meta-box video-meta">
+              <div class="video-title">Trade Winds Speciality</div>
+              <div class="video-subtitle">
+                <div class="views-count">457 223 views</div>
+                <div class="quick-actions">
+                  <a class="quick-action">
+                    <i data-feather="thumbs-up"></i>
+                  </a>
+                  <a class="quick-action">
+                    <i data-feather="thumbs-down"></i>
+                  </a>
+                  <a class="quick-action">
+                    <i data-feather="share-2"></i>
+                  </a>
+                  <a class="quick-action">
+                    <i data-feather="save"></i>
+                  </a>
+                  <a class="quick-action">
+                    <i data-feather="cast"></i>
+                  </a>
+                  <a class="quick-action is-mobile related-trigger">
+                    <i data-feather="more-vertical"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="video-owner">
+                <img
+                  src="https://via.placeholder.com/150x150"
+                  data-demo-src="https://yt3.ggpht.com/a/AATXAJwGpWL7g1YRC4p5kDEJRyaCDSGCk5u48UqmUqN_sw=s88-c-k-c0xffffffff-no-rj-mo"
+                  alt=""
+                />
+                <div class="meta">
+                  <span>Estebe Salgado</span>
+                  <span>Uploaded 10 days ago</span>
+                </div>
+                <a class="button">Follow 1.52M</a>
+              </div>
+            </div>
+            <div class="meta-box video-description">
+              <h4>Description</h4>
+              <p>
+                Quis non odit sordidos, vanos, leves, futtiles? Vide, quantum,
+                inquam, fallare, Torquate. Duo Reges: constructio interrete.
+                Vestri haec verecundius, illi fortasse constantius. Si longus,
+                levis dictata sunt. Magna laus.
+              </p>
+
+              <div class="additional-description content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Murenam te accusante defenderem. Apud ceteros autem
+                  philosophos, qui quaesivit aliquid, tacet;
+                </p>
+                <p>
+                  <a
+                    class="standard-link"
+                    href="http://loripsum.net/"
+                    target="_blank"
+                    >Qui est in parvis malis.</a
+                  >
+                  Non potes, nisi retexueris illa.
+                  <a
+                    class="standard-link"
+                    href="http://loripsum.net/"
+                    target="_blank"
+                    >Sed fortuna fortis;</a
+                  >
+                  Duo Reges: constructio interrete.
+                  <a
+                    class="standard-link"
+                    href="http://loripsum.net/"
+                    target="_blank"
+                    >Primum divisit ineleganter;</a
+                  >
+                </p>
+                <ul>
+                  <li>
+                    Quid, si non sensus modo ei sit datus, verum etiam animus
+                    hominis?
+                  </li>
+                  <li>
+                    Re mihi non aeque satisfacit, et quidem locis pluribus.
+                  </li>
+                  <li>
+                    Ergo opifex plus sibi proponet ad formarum quam civis
+                    excellens ad factorum pulchritudinem?
+                  </li>
+                  <li>
+                    Animadverti, ínquam, te isto modo paulo ante ponere, et scio
+                    ab Antiocho nostro dici sic solere;
+                  </li>
+                </ul>
+                <p>
+                  Sed residamus, inquit, si placet. Dici enim nihil potest
+                  verius. Ita relinquet duas, de quibus etiam atque etiam
+                  consideret. Haec para/doca illi, nos admirabilia dicamus.
+                  Nescio quo modo praetervolavit oratio. Ut pulsi recurrant? A
+                  mene tu? Summus dolor plures dies manere non potest?
+                </p>
+              </div>
+
+              <hr />
+              <a
+                id="description-show-more"
+                class="has-text-centered video-description-more"
+                >Show More</a
+              >
+            </div>
+            <div class="comments-wrap">
+              <div class="media comment-box">
+                <div class="media-left">
+                  <div class="avatar-wrap">
+                    <img
+                      src="https://via.placeholder.com/150x150"
+                      data-demo-src="assets/img/avatars/jenna.png"
+                      data-user-popover="0"
+                      alt=""
+                    />
+                    <div class="badge">
+                      <i data-feather="check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-content">
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Add a comment..."
+                      rows="4"
+                    ></textarea>
+                    <a class="button">Post Comment</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comments-count">
+                <h3>Comments (9)</h3>
+              </div>
+
+              <div class="media is-comment">
+                <div class="media-left">
+                  <div class="avatar-wrap is-smaller">
+                    <img
+                      src="https://via.placeholder.com/150x150"
+                      data-demo-src="assets/img/avatars/dan.jpg"
+                      data-user-popover="1"
+                      alt=""
+                    />
+                    <div class="badge">
+                      <i data-feather="check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-content">
+                  <div class="comment-meta">
+                    <h4><a>Dan Walker</a> <small> · 3 hours ago</small></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis porta eros lacus, nec ultricies elit blandit non.
+                      Suspendisse pellentesque mauris sit amet dolor blandit
+                      rutrum. Nunc in tempus turpis.
+                    </p>
+                  </div>
+                  <div class="comment-stats-wrap">
+                    <div class="comment-stats">
+                      <div class="stat is-likes">
+                        <i data-feather="thumbs-up"></i>
+                        <span>23</span>
+                      </div>
+                      <div class="stat is-dislikes">
+                        <i data-feather="thumbs-down"></i>
+                        <span>3</span>
+                      </div>
+                    </div>
+                    <div class="comment-actions">
+                      <a class="comment-action is-like">
+                        <i data-feather="thumbs-up"></i>
+                      </a>
+                      <a class="comment-action is-dislike">
+                        <i data-feather="thumbs-down"></i>
+                      </a>
+                      <a class="comment-action is-reply">
+                        <i data-feather="message-circle"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="nested-replies">
+                    <a class="header">
+                      <span>5 Replies</span>
+                      <i data-feather="chevron-down"></i>
+                    </a>
+                    <div class="nested-comments">
+                      <!--Nested comment -->
+                      <div class="media is-comment is-nested">
+                        <figure class="media-left">
+                          <div class="avatar-wrap is-smaller">
+                            <img
+                              src="https://via.placeholder.com/150x150"
+                              data-demo-src="assets/img/avatars/gaelle.jpeg"
+                              data-user-popover="11"
+                              alt=""
+                            />
+                          </div>
+                        </figure>
+                        <div class="media-content">
+                          <div class="comment-meta">
+                            <h4>
+                              <a>Gaelle Morris</a>
+                              <small> · 30 minutes ago</small>
+                            </h4>
+                            <p>
+                              <span class="mention">@Dan Walker</span> Lorem
+                              ipsum dolor sit amet, consectetur adipiscing elit.
+                              Duis porta eros lacus, nec ultricies elit blandit
+                              non. Suspendisse pellentesque mauris sit amet
+                              dolor blandit rutrum. Nunc in tempus turpis.
+                            </p>
+                          </div>
+                          <div class="comment-stats-wrap">
+                            <div class="comment-stats">
+                              <div class="stat is-likes">
+                                <i data-feather="thumbs-up"></i>
+                                <span>2</span>
+                              </div>
+                              <div class="stat is-dislikes">
+                                <i data-feather="thumbs-down"></i>
+                                <span>0</span>
+                              </div>
+                            </div>
+                            <div class="comment-actions">
+                              <a class="comment-action is-like">
+                                <i data-feather="thumbs-up"></i>
+                              </a>
+                              <a class="comment-action is-dislike">
+                                <i data-feather="thumbs-down"></i>
+                              </a>
+                              <a class="comment-action is-reply">
+                                <i data-feather="message-circle"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Nested comment -->
+                      <div class="media is-comment is-nested">
+                        <figure class="media-left">
+                          <div class="avatar-wrap is-smaller">
+                            <img
+                              src="https://via.placeholder.com/150x150"
+                              data-demo-src="assets/img/avatars/rolf.jpg"
+                              data-user-popover="13"
+                              alt=""
+                            />
+                            <div class="badge">
+                              <i data-feather="check"></i>
+                            </div>
+                          </div>
+                        </figure>
+                        <div class="media-content">
+                          <div class="comment-meta">
+                            <h4>
+                              <a>Rolf Krupp</a> <small> · 50 minutes ago</small>
+                            </h4>
+                            <p>
+                              <span class="mention">@Gaelle Morris</span> Lorem
+                              ipsum dolor sit amet, consectetur adipiscing elit.
+                              Duis porta eros lacus, nec ultricies elit blandit
+                              non.
+                            </p>
+                          </div>
+                          <div class="comment-stats-wrap">
+                            <div class="comment-stats">
+                              <div class="stat is-likes">
+                                <i data-feather="thumbs-up"></i>
+                                <span>1</span>
+                              </div>
+                              <div class="stat is-dislikes">
+                                <i data-feather="thumbs-down"></i>
+                                <span>0</span>
+                              </div>
+                            </div>
+                            <div class="comment-actions">
+                              <a class="comment-action is-like">
+                                <i data-feather="thumbs-up"></i>
+                              </a>
+                              <a class="comment-action is-dislike">
+                                <i data-feather="thumbs-down"></i>
+                              </a>
+                              <a class="comment-action is-reply">
+                                <i data-feather="message-circle"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Nested comment -->
+                      <div class="media is-comment is-nested">
+                        <figure class="media-left">
+                          <div class="avatar-wrap is-smaller">
+                            <img
+                              src="https://via.placeholder.com/150x150"
+                              data-demo-src="assets/img/avatars/bobby.jpg"
+                              data-user-popover="8"
+                              alt=""
+                            />
+                          </div>
+                        </figure>
+                        <div class="media-content">
+                          <div class="comment-meta">
+                            <h4>
+                              <a>Bobby Brown</a> <small> · 1 hour ago</small>
+                            </h4>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit.
+                            </p>
+                          </div>
+                          <div class="comment-stats-wrap">
+                            <div class="comment-stats">
+                              <div class="stat is-likes">
+                                <i data-feather="thumbs-up"></i>
+                                <span>5</span>
+                              </div>
+                              <div class="stat is-dislikes">
+                                <i data-feather="thumbs-down"></i>
+                                <span>1</span>
+                              </div>
+                            </div>
+                            <div class="comment-actions">
+                              <a class="comment-action is-like">
+                                <i data-feather="thumbs-up"></i>
+                              </a>
+                              <a class="comment-action is-dislike">
+                                <i data-feather="thumbs-down"></i>
+                              </a>
+                              <a class="comment-action is-reply">
+                                <i data-feather="message-circle"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Nested comment -->
+                      <div class="media is-comment is-nested">
+                        <figure class="media-left">
+                          <div class="avatar-wrap is-smaller">
+                            <img
+                              src="https://via.placeholder.com/150x150"
+                              data-demo-src="assets/img/avatars/stella.jpg"
+                              data-user-popover="2"
+                              alt=""
+                            />
+                          </div>
+                        </figure>
+                        <div class="media-content">
+                          <div class="comment-meta">
+                            <h4>
+                              <a>Stella Bergmann</a>
+                              <small> · 2 hours ago</small>
+                            </h4>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Duis porta eros lacus, nec ultricies elit
+                              blandit non.
+                            </p>
+                          </div>
+                          <div class="comment-stats-wrap">
+                            <div class="comment-stats">
+                              <div class="stat is-likes">
+                                <i data-feather="thumbs-up"></i>
+                                <span>0</span>
+                              </div>
+                              <div class="stat is-dislikes">
+                                <i data-feather="thumbs-down"></i>
+                                <span>0</span>
+                              </div>
+                            </div>
+                            <div class="comment-actions">
+                              <a class="comment-action is-like">
+                                <i data-feather="thumbs-up"></i>
+                              </a>
+                              <a class="comment-action is-dislike">
+                                <i data-feather="thumbs-down"></i>
+                              </a>
+                              <a class="comment-action is-reply">
+                                <i data-feather="message-circle"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Nested comment -->
+                      <div class="media is-comment is-nested">
+                        <figure class="media-left">
+                          <div class="avatar-wrap is-smaller">
+                            <img
+                              src="https://via.placeholder.com/150x150"
+                              data-demo-src="assets/img/avatars/edward.jpeg"
+                              data-user-popover="5"
+                              alt=""
+                            />
+                          </div>
+                        </figure>
+                        <div class="media-content">
+                          <div class="comment-meta">
+                            <h4>
+                              <a>Edward Mayers</a> <small> · 3 hours ago</small>
+                            </h4>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Duis porta eros lacus, nec ultricies elit
+                              blandit non.
+                            </p>
+                          </div>
+                          <div class="comment-stats-wrap">
+                            <div class="comment-stats">
+                              <div class="stat is-likes">
+                                <i data-feather="thumbs-up"></i>
+                                <span>6</span>
+                              </div>
+                              <div class="stat is-dislikes">
+                                <i data-feather="thumbs-down"></i>
+                                <span>0</span>
+                              </div>
+                            </div>
+                            <div class="comment-actions">
+                              <a class="comment-action is-like">
+                                <i data-feather="thumbs-up"></i>
+                              </a>
+                              <a class="comment-action is-dislike">
+                                <i data-feather="thumbs-down"></i>
+                              </a>
+                              <a class="comment-action is-reply">
+                                <i data-feather="message-circle"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Comment -->
+              <div class="media is-comment">
+                <figure class="media-left">
+                  <div class="avatar-wrap is-smaller">
+                    <img
+                      src="https://via.placeholder.com/150x150"
+                      data-demo-src="assets/img/avatars/milly.jpg"
+                      data-user-popover="7"
+                      alt=""
+                    />
+                  </div>
+                </figure>
+                <div class="media-content">
+                  <div class="comment-meta">
+                    <h4><a>Milly Augutine</a> <small> · 4 hours ago</small></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <div class="comment-stats-wrap">
+                    <div class="comment-stats">
+                      <div class="stat is-likes">
+                        <i data-feather="thumbs-up"></i>
+                        <span>8</span>
+                      </div>
+                      <div class="stat is-dislikes">
+                        <i data-feather="thumbs-down"></i>
+                        <span>0</span>
+                      </div>
+                    </div>
+                    <div class="comment-actions">
+                      <a class="comment-action is-like">
+                        <i data-feather="thumbs-up"></i>
+                      </a>
+                      <a class="comment-action is-dislike">
+                        <i data-feather="thumbs-down"></i>
+                      </a>
+                      <a class="comment-action is-reply">
+                        <i data-feather="message-circle"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="media is-comment">
+                <figure class="media-left">
+                  <div class="avatar-wrap is-smaller">
+                    <img
+                      src="https://via.placeholder.com/150x150"
+                      data-demo-src="assets/img/avatars/elise.jpg"
+                      data-user-popover="6"
+                      alt=""
+                    />
+                  </div>
+                </figure>
+                <div class="media-content">
+                  <div class="comment-meta">
+                    <h4><a>Elise Walker</a> <small> · 5 hours ago</small></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis porta eros lacus, nec ultricies elit blandit non.
+                    </p>
+                  </div>
+                  <div class="comment-stats-wrap">
+                    <div class="comment-stats">
+                      <div class="stat is-likes">
+                        <i data-feather="thumbs-up"></i>
+                        <span>3</span>
+                      </div>
+                      <div class="stat is-dislikes">
+                        <i data-feather="thumbs-down"></i>
+                        <span>0</span>
+                      </div>
+                    </div>
+                    <div class="comment-actions">
+                      <a class="comment-action is-like">
+                        <i data-feather="thumbs-up"></i>
+                      </a>
+                      <a class="comment-action is-dislike">
+                        <i data-feather="thumbs-down"></i>
+                      </a>
+                      <a class="comment-action is-reply">
+                        <i data-feather="message-circle"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="media is-comment">
+                <figure class="media-left">
+                  <div class="avatar-wrap is-smaller">
+                    <img
+                      src="https://via.placeholder.com/150x150"
+                      data-demo-src="assets/img/avatars/placeholder-m.jpg"
+                      alt=""
+                    />
+                  </div>
+                </figure>
+                <div class="media-content">
+                  <div class="comment-meta">
+                    <h4><a>John Doe</a> <small> · 5 hours ago</small></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis porta eros lacus, nec ultricies elit blandit non.
+                    </p>
+                  </div>
+                  <div class="comment-stats-wrap">
+                    <div class="comment-stats">
+                      <div class="stat is-likes">
+                        <i data-feather="thumbs-up"></i>
+                        <span>12</span>
+                      </div>
+                      <div class="stat is-dislikes">
+                        <i data-feather="thumbs-down"></i>
+                        <span>4</span>
+                      </div>
+                    </div>
+                    <div class="comment-actions">
+                      <a class="comment-action is-like">
+                        <i data-feather="thumbs-up"></i>
+                      </a>
+                      <a class="comment-action is-dislike">
+                        <i data-feather="thumbs-down"></i>
+                      </a>
+                      <a class="comment-action is-reply">
+                        <i data-feather="message-circle"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="related-side">
+            <div class="meta-box related-list">
+              <!-- <div class="chat-wrapper is-active">
         <div class="chat-inner">
 
-            <!-- Chat body -->
-            <div id="chat-body" class="chat-body is-opened">
-                <!-- Conversation with Dan -->
-                <div id="dan-conversation" class="chat-body-inner has-slimscroll">
-                    <div class="date-divider">
-                        <hr class="date-divider-line">
+            
+
+        </div>
+    </div> -->
+
+              <!-- Add this to show chat window -->
+              <!-- is-standalone -->
+              <div class="chat-wrapper" style="width: 50% !important">
+                <div class="chat-inner">
+                  <!-- Chat body -->
+                  <div
+                    id="chat-body"
+                    class="chat-body is-opened"
+                    style="width: 100% !important"
+                  >
+                    <!-- Conversation with Dan -->
+                    <div
+                      id="dan-conversation"
+                      class="chat-body-inner has-slimscroll"
+                    >
+                      <div class="date-divider">
+                        <hr class="date-divider-line" />
                         <span class="date-divider-text">Today</span>
-                    </div>
+                      </div>
 
-                    <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
+                      <div class="chat-message is-received">
+                        <img
+                          src="https://via.placeholder.com/300x300"
+                          data-demo-src="assets/img/avatars/dan.jpg"
+                          alt=""
+                        />
                         <div class="message-block">
-                            <span>8:03am</span>
-                            <div class="message-text">Hi Jenna! I made a new design, and i wanted to show it to you.</div>
+                          <span>8:03am</span>
+                          <div class="message-text">
+                            Hi Jenna! I made a new design, and i wanted to show
+                            it to you.
+                          </div>
                         </div>
-                    </div>
+                      </div>
 
-                    <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
+                      <div class="chat-message is-received">
+                        <img
+                          src="https://via.placeholder.com/300x300"
+                          data-demo-src="assets/img/avatars/dan.jpg"
+                          alt=""
+                        />
                         <div class="message-block">
-                            <span>8:03am</span>
-                            <div class="message-text">It's quite clean and it's inspired from Bulkit.</div>
+                          <span>8:03am</span>
+                          <div class="message-text">
+                            It's quite clean and it's inspired from Bulkit.
+                          </div>
                         </div>
-                    </div>
+                      </div>
 
-                    <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
+                      <div class="chat-message is-sent">
+                        <img
+                          src="https://via.placeholder.com/300x300"
+                          data-demo-src="assets/img/avatars/jenna.png"
+                          alt=""
+                        />
                         <div class="message-block">
-                            <span>8:12am</span>
-                            <div class="message-text">Oh really??! I want to see that.</div>
+                          <span>8:12am</span>
+                          <div class="message-text">
+                            Oh really??! I want to see that.
+                          </div>
                         </div>
-                    </div>
+                      </div>
 
-                    <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
+                      <div class="chat-message is-received">
+                        <img
+                          src="https://via.placeholder.com/300x300"
+                          data-demo-src="assets/img/avatars/dan.jpg"
+                          alt=""
+                        />
                         <div class="message-block">
-                            <span>8:13am</span>
-                            <div class="message-text">FYI it was done in less than a day.</div>
+                          <span>8:13am</span>
+                          <div class="message-text">
+                            FYI it was done in less than a day.
+                          </div>
                         </div>
-                    </div>
+                      </div>
 
-                    <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
+                      <div class="chat-message is-sent">
+                        <img
+                          src="https://via.placeholder.com/300x300"
+                          data-demo-src="assets/img/avatars/jenna.png"
+                          alt=""
+                        />
                         <div class="message-block">
-                            <span>8:17am</span>
-                            <div class="message-text">Great to hear it. Just send me the PSD files so i can have a look at it.</div>
+                          <span>8:17am</span>
+                          <div class="message-text">
+                            Great to hear it. Just send me the PSD files so i
+                            can have a look at it.
+                          </div>
                         </div>
-                    </div>
+                      </div>
 
-                    <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
+                      <div class="chat-message is-sent">
+                        <img
+                          src="https://via.placeholder.com/300x300"
+                          data-demo-src="assets/img/avatars/jenna.png"
+                          alt=""
+                        />
                         <div class="message-block">
-                            <span>8:18am</span>
-                            <div class="message-text">And if you have a prototype, you can also send me the link to it.</div>
+                          <span>8:18am</span>
+                          <div class="message-text">
+                            And if you have a prototype, you can also send me
+                            the link to it.
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <!-- Compose message area -->
-                <div class="chat-action">
-                    <div class="chat-action-inner">
+                    <!-- Compose message area -->
+                    <div class="chat-action">
+                      <div class="chat-action-inner">
                         <div class="control">
-                            <textarea class="textarea comment-textarea" rows="1"></textarea>
-                            <div class="dropdown compose-dropdown is-spaced is-accent is-up dropdown-trigger">
-                                <div>
-                                    <div class="add-button">
-                                        <div class="button-inner">
-                                            <i data-feather="plus"></i>
-                                        </div>
-                                    </div>
+                          <textarea
+                            class="textarea comment-textarea"
+                            rows="1"
+                          ></textarea>
+                          <div
+                            class="
+                              dropdown
+                              compose-dropdown
+                              is-spaced is-accent is-up
+                              dropdown-trigger
+                            "
+                          >
+                            <div>
+                              <div class="add-button">
+                                <div class="button-inner">
+                                  <i data-feather="plus"></i>
                                 </div>
-                                <div class="dropdown-menu" role="menu">
-                                    <div class="dropdown-content">
-                                        <a href="#" class="dropdown-item">
-                                            <div class="media">
-                                                <i data-feather="code"></i>
-                                                <div class="media-content">
-                                                    <h3>Code snippet</h3>
-                                                    <small>Add and paste a code snippet.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item">
-                                            <div class="media">
-                                                <i data-feather="file-text"></i>
-                                                <div class="media-content">
-                                                    <h3>Note</h3>
-                                                    <small>Add and paste a note.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr class="dropdown-divider">
-                                        <a class="dropdown-item">
-                                            <div class="media">
-                                                <i data-feather="server"></i>
-                                                <div class="media-content">
-                                                    <h3>Remote file</h3>
-                                                    <small>Add a file from a remote drive.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item">
-                                            <div class="media">
-                                                <i data-feather="monitor"></i>
-                                                <div class="media-content">
-                                                    <h3>Local file</h3>
-                                                    <small>Add a file from your computer.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                              </div>
                             </div>
+                            <div class="dropdown-menu" role="menu">
+                              <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                  <div class="media">
+                                    <i data-feather="code"></i>
+                                    <div class="media-content">
+                                      <h3>Code snippet</h3>
+                                      <small
+                                        >Add and paste a code snippet.</small
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                                <a class="dropdown-item">
+                                  <div class="media">
+                                    <i data-feather="file-text"></i>
+                                    <div class="media-content">
+                                      <h3>Note</h3>
+                                      <small>Add and paste a note.</small>
+                                    </div>
+                                  </div>
+                                </a>
+                                <hr class="dropdown-divider" />
+                                <a class="dropdown-item">
+                                  <div class="media">
+                                    <i data-feather="server"></i>
+                                    <div class="media-content">
+                                      <h3>Remote file</h3>
+                                      <small
+                                        >Add a file from a remote drive.</small
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                                <a class="dropdown-item">
+                                  <div class="media">
+                                    <i data-feather="monitor"></i>
+                                    <div class="media-content">
+                                      <h3>Local file</h3>
+                                      <small
+                                        >Add a file from your computer.</small
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-
+              </div>
+              <!-- Chat End -->
             </div>
-
+          </div>
         </div>
-    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <div class="explorer-menu">
-        <div class="explorer-inner">
-            <div class="explorer-container">
-                <!--Header-->
-                <div class="explorer-header">
-                    <h3>Explore</h3>
-                </div>
-                <!--List-->
-                <div class="explore-list has-slimscroll">
-                    <!--item-->
-                    <a href="/navbar-v1-feed.html" class="explore-item">
-                        <img src="assets/img/icons/explore/clover.svg" alt="">
-                        <h4>Home</h4>
-                    </a>
-                    <!--item-->
-                    <a href="/navbar-v1-events.html" class="explore-item">
-                        <img src="assets/img/icons/explore/calendar.svg" alt="">
-                        <h4>Events</h4>
-                    </a>
-                    <!--item-->
-                    <a href="/navbar-v1-groups.html" class="explore-item">
-                        <img src="assets/img/icons/explore/house.svg" alt="">
-                        <h4>Interests</h4>
-                    </a>
-                    <!--item-->
-                    <a href="/navbar-v1-settings.html" class="explore-item">
-                        <img src="assets/img/icons/explore/settings.svg" alt="">
-                        <h4>Settings</h4>
-                    </a>
-                </div>
-            </div>
+      <div class="explorer-inner">
+        <div class="explorer-container">
+          <!--Header-->
+          <div class="explorer-header">
+            <h3>Explore</h3>
+          </div>
+          <!--List-->
+          <div class="explore-list has-slimscroll">
+            <!--item-->
+            <a href="/navbar-v1-feed.html" class="explore-item">
+              <img src="assets/img/icons/explore/clover.svg" alt="" />
+              <h4>Home</h4>
+            </a>
+            <!--item-->
+            <a href="/navbar-v1-events.html" class="explore-item">
+              <img src="assets/img/icons/explore/calendar.svg" alt="" />
+              <h4>Events</h4>
+            </a>
+            <!--item-->
+            <a href="/navbar-v1-groups.html" class="explore-item">
+              <img src="assets/img/icons/explore/house.svg" alt="" />
+              <h4>Interests</h4>
+            </a>
+            <!--item-->
+            <a href="/navbar-v1-settings.html" class="explore-item">
+              <img src="assets/img/icons/explore/settings.svg" alt="" />
+              <h4>Settings</h4>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
@@ -1113,10 +1447,6 @@
     <script src="assets/js/popovers-pages.js"></script>
     <script src="assets/js/lightbox.js"></script>
 
-  
     <script src="assets/js/videos.js"></script>
-
-
-</body>
-
+  </body>
 </html>
